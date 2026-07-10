@@ -21,9 +21,12 @@ alias nv='nvim'
 alias ls='ls -lh --color=auto'
 alias lsa='ls -lah --color=auto'
 
-alias cl='clear && pfetch'
+alias cl='clear'
+alias clr='clear && pfetch'
 alias ..='cd ..'
 
 alias ez='exec zsh'
 
 alias dotfiles='git --git-dir=~/dotfiles --work-tree=/'
+
+export PATH="$PATH:/Users/misterrhee/Library/Python/3.9/bin"

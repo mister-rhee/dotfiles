@@ -1,5 +1,6 @@
-local map = vim.keymap.set
+require("config.lazy")
 
+local map = vim.keymap.set
 encoding = "UTF-8"
 
 vim.opt.number = true
@@ -39,3 +40,4 @@ map('x', 'K', 'yddkP<S-V>', {})
 
 -- use U for redo
 map('n', 'U', '<C-r>', {})
+
