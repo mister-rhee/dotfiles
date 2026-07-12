@@ -1,6 +1,9 @@
+local map = vim.keymap.set
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 require("config.lazy")
 
-local map = vim.keymap.set
 encoding = "UTF-8"
 
 vim.opt.number = true
@@ -33,6 +36,8 @@ vim.opt.incsearch = true
 vim.opt.ignorecase = true
 vim.opt.showmatch = true
 vim.opt.smartcase = true
+vim.opt.clipboard = 'unnamedplus' -- Share system clipboard
+vim.opt.undofile = true -- Undo persists across nvim sessions
 
 -- move line up and down
 map('x', 'J', 'yddp<S-V>', {})
